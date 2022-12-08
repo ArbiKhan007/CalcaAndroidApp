@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calca_screen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/cardview_dark_background"
+        android:hint="0"
+        android:gravity="bottom"
+        android:textColorHint="@color/purple_200"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/calca_one"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/calca_two"
+        app:layout_constraintTop_toBottomOf="@+id/calca_screen" />
+
+
+    <Button
+        android:id="@+id/calca_two"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="2"
+        app:layout_constraintLeft_toRightOf="@+id/calca_one"
+        app:layout_constraintRight_toLeftOf="@id/calca_three"
+        app:layout_constraintTop_toBottomOf="@+id/calca_screen" />
+
+    <Button
+        android:id="@+id/calca_three"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="3"
+        app:layout_constraintLeft_toRightOf="@+id/calca_two"
+        app:layout_constraintTop_toBottomOf="@+id/calca_screen" />
+
+    <Button
+        android:id="@+id/calca_four"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="@+id/calca_one"
+        app:layout_constraintTop_toBottomOf="@+id/calca_one" />
+
+    <Button
+        android:id="@+id/calca_five"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="5"
+        app:layout_constraintLeft_toRightOf="@+id/calca_four"
+        app:layout_constraintTop_toBottomOf="@+id/calca_two" />
+
+    <Button
+        android:id="@+id/calca_six"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:text="6"
+        app:layout_constraintLeft_toRightOf="@+id/calca_five"
+        app:layout_constraintTop_toBottomOf="@+id/calca_three" />
+
+    <Button
+        android:id="@+id/calca_seven"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:text="7"
+        app:layout_constraintLeft_toLeftOf="@+id/calca_four"
+        app:layout_constraintTop_toBottomOf="@+id/calca_four" />
+
+    <Button
+        android:id="@+id/calca_eight"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="8"
+        app:layout_constraintLeft_toRightOf="@+id/calca_seven"
+        app:layout_constraintTop_toBottomOf="@+id/calca_five" />
+
+    <Button
+        android:id="@+id/calca_nine"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:text="9"
+        app:layout_constraintLeft_toRightOf="@+id/calca_eight"
+        app:layout_constraintTop_toBottomOf="@+id/calca_six" />
+
+    <Button
+        android:id="@+id/calca_dot"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:text="."
+        app:layout_constraintLeft_toLeftOf="@+id/calca_seven"
+        app:layout_constraintTop_toBottomOf="@+id/calca_seven" />
+
+    <Button
+        android:id="@+id/calca_zero"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@+id/calca_dot"
+        app:layout_constraintTop_toBottomOf="@+id/calca_eight" />
+
+    <Button
+        android:id="@+id/calca_c"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:text="C"
+        app:layout_constraintLeft_toRightOf="@+id/calca_zero"
+        app:layout_constraintTop_toBottomOf="@+id/calca_nine" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/calca_dot"
+        app:layout_constraintTop_toBottomOf="@+id/calca_dot" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@+id/calca_zero"
+        app:layout_constraintLeft_toRightOf="@id/plus"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/calca_zero"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="*"
+        app:layout_constraintTop_toBottomOf="@id/calca_c"
+        app:layout_constraintLeft_toRightOf="@id/divide"
+        />
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="60dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="="
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/calca_three"
+        app:layout_constraintTop_toBottomOf="@id/calca_screen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
